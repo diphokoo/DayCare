@@ -4,83 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thand’uXolo Day Care Centre</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">Thand'uXolo Day Care Centre</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#programs">Programs</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <!-- Header with Responsive Navbar -->
+    <header class="bg-primary text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary container">
+            <a class="navbar-brand fw-bold" href="#">Thand'uXolo Day Care Centre</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#programs">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <h1>Welcome to Thand'uXolo Day Care Centre</h1>
-        <p>An environment that promotes the well-being of children.</p>
-        <button>Learn More</button>
+    <section id="home" class="hero text-center text-white bg-primary py-5">
+        <div class="container">
+            <h1 class="display-4">Welcome to Thand'uXolo Day Care Centre</h1>
+            <p class="lead">An environment that promotes the well-being of children.</p>
+            <button class="btn btn-light text-primary">Learn More</button>
+        </div>
     </section>
 
     <!-- About Us Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Thand’uXolo Day Care Center aims to be a leading organization in providing quality education and </p> 
-        <p> holistic development for children aged 1 to 6 years, while also ensuring they receive proper nutrition.</p>
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2>About Us</h2>
+            <p>Thand’uXolo Day Care Center aims to be a leading organization in providing quality education and holistic development for children aged 1 to 6 years, while also ensuring they receive proper nutrition.</p>
+        </div>
     </section>
 
     <!-- Programs Section -->
-    <section id="programs">
-        <h2>Our Programs</h2>
-        <div class="program-list">
-            <div class="program-item">Infant Care (0-12 months)</div>
-            <div class="program-item">Toddler Program (1-3 years)</div>
-            <div class="program-item">Preschool (3-5 years)</div>
+    <section id="programs" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Our Programs</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="program-item p-3 border rounded">Infant Care (0-12 months)</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="program-item p-3 border rounded">Toddler Program (1-3 years)</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="program-item p-3 border rounded">Preschool (3-5 years)</div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-grid">
-            <img src="/resources/home/kidsplaying.jpg" alt="Kids playing">
-            <img src="/resources/home/logo.jpg" alt="Daycare center">
-            <img src="/resources/home/happyKid.jpg" alt="Happy children">
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Gallery</h2>
+            <div class="row g-3">
+                <div class="col-12 col-md-4">
+                    <img src="/resources/home/kidsplaying.jpg" class="img-fluid rounded" alt="Kids playing">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="/resources/home/logo.jpg" class="img-fluid rounded" alt="Daycare center">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="/resources/home/happyKid.jpg" class="img-fluid rounded" alt="Happy children">
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials">
-        <h2>What Parents Say</h2>
-        <blockquote>"Happy Kids Daycare has been a wonderful experience for our family!" - Thembi </blockquote>
-        <blockquote>"The staff is amazing and my child loves going every day." - Katlego </blockquote>
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>What Parents Say</h2>
+            <blockquote class="blockquote">"Happy Kids Daycare has been a wonderful experience for our family!" - Thembi</blockquote>
+            <blockquote class="blockquote">"The staff is amazing and my child loves going every day." - Katlego</blockquote>
+        </div>
     </section>
 
     <!-- Contact Us Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-        <div class="contact-info">
-            <p>Email: thanduxolodc@gmail.com</p>
-            <p>Phone: 081 486 4918</p>
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <form class="mx-auto" style="max-width: 400px;">
+                <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+                <input type="email" class="form-control mb-3" placeholder="Your Email" required>
+                <textarea class="form-control mb-3" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            </form>
+            <div class="contact-info text-center mt-4">
+                <p>Email: thanduxolodc@gmail.com</p>
+                <p>Phone: 081 486 4918</p>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="bg-primary text-white py-3 text-center">
         <p>&copy; 2024 Thand'uXolo Day Care Centre. All Rights Reserved.</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

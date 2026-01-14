@@ -69,8 +69,13 @@ body {
 
 .welcome-text {
     font-size: 2rem !important;
-    color: rgb(167 229 253);
+    color: #5fb1dd;
     font-weight: 400;
+}
+
+.welcome-section p {
+    color: #5fb1dd;
+    font-size: 1.2rem;
 }
 
 /* Mobile Responsiveness */
@@ -85,6 +90,11 @@ body {
     
     .welcome-text {
         font-size: 1.5rem;
+    }
+    
+    .navigation-bar .navbar-nav {
+        flex-direction: revert-layer;
+        align-items: center;
     }
     
     .navigation-bar .nav-link {

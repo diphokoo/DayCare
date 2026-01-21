@@ -137,6 +137,10 @@ h2 {
         font-size: 1rem;
         padding: 0.5rem 1rem;
     }
+
+    .program-item {
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -146,6 +150,10 @@ h2 {
     
     .hero-tagline {
         font-size: 1rem;
+    }
+
+        .program-item {
+        margin-top: 10px;
     }
 }
 
